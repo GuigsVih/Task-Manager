@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+.form-control:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #8998a6;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgba(52, 58, 64, 0.44);
+}
+.btn-primary {
+
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.btn-primary:focus, .btn-primary.focus {
+
+  box-shadow: 0 0 0 0.1rem rgba(52, 58, 64, 0.44);
+
+}
+.btn-primary:hover {
+
+  color: #fff;
+  background-color: #1d2630;
+  border-color: #1d2630;
+
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(24, 28, 32, 0.5);
+}
+.invalid {
+  border: 2px solid tomato;
+}
+.invalid::placeholder {
+  color: tomato;
+}

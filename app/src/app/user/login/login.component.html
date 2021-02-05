@@ -1,0 +1,17 @@
+<form class="form-signin" [formGroup]="form">
+  <h1 class="h3 mb-3 font-weight-light text-center">Faça o login.</h1>
+  <div class="text-center">
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+      {{ error }}
+    </div>
+  </div>
+  <label for="inputEmail">E-mail</label>
+  <i class="far fa-user"></i>
+  <input type="email" id="inputEmail" class="form-control" formControlName="email" [ngClass]="{ 'invalid': submitted && f.email.errors }"  placeholder="Seu email">
+  <label for="inputPassword">Senha</label>
+  <i class="fas fa-unlock"></i>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Senha" formControlName="password" [ngClass]="{ 'invalid': submitted && f.password.errors }">
+  <div class="mb-3"></div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="onSubmit()">Login</button>
+  <p class="mt-5 mb-3 text-muted text-center">© {{ year }} Guilherme Vilela.</p>
+</form>
